@@ -36,7 +36,7 @@ function inputIntegerFromUser(promptMessage) {
       if (!isNaN(userInput)) {
         resolve(userInput);
       } else {
-        console.log("Invalid input. Please enter a valid integer.");
+        console.log("Invalid input. Please enter a valid integer!!");
         resolve(inputIntegerFromUser(promptMessage));
       }
     });
