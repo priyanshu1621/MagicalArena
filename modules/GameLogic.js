@@ -1,4 +1,4 @@
-const { rollDice } = require("../utils/GameFunction");
+const { rollDice } = require("../common/GameFunction");
 const { Player } = require("./Player");
 
 class GameLogic {
