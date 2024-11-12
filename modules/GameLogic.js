@@ -38,4 +38,16 @@ class GameLogic {
 
         return id;
     }
+
+    // delete player who lost the game
+  deletePlayer(id) {
+    if (this.Players.has(id)) {
+      const player = this.Players.get(id);
+      console.log(`Player - ${player?.name} Lost the Game\n`);
+      this.Players.delete(id);
+    } else {
+      console.log(`No player with id = ${id} exists.\n`);
+    }
+  }
+
 }
