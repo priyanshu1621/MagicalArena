@@ -1,14 +1,14 @@
 {
-  "name": "magicalarena",
+  "name": "magical-arena",
   "version": "1.0.0",
-  "description": "",
+  "description": "Magical Arena( A Battle Game)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Priyanshu Gaur",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
