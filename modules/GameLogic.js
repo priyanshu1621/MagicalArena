@@ -1,5 +1,5 @@
 const { rollDice } = require("../common/GameFunction");
-const { Player } = require("./Player");
+const { Player } = require("./Players");
 
 class GameLogic {
     constructor() {
@@ -52,7 +52,7 @@ class GameLogic {
 
     // Display player
     displayPlayers() {
-        console.log("|\tID\t |\tNAME\t |\tHEALTH\t |\tSTRENGTH\t |\tATTACK\t|");
+        console.log("|\tID\t|\tNAME\t|\tHEALTH\t|\tSTRENGTH\t|\tATTACK\t|");
         for (const [id, player] of this.Players) {
             const { name, health, strength, attack } = player;
             console.log(

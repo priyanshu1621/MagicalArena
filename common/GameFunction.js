@@ -33,7 +33,7 @@ function inputIntegerFromUser(promptMessage) {
     rl.question(promptMessage, (inputString) => {
       rl.close();
       const userInput = parseInt(inputString.trim(), 10);
-      if (!isNaN(userInput)) {
+      if (!isNaN(userInput) && !isNagative(userInput)) {
         resolve(userInput);
       } else {
         console.log("Invalid input. Please enter a valid integer!!");
@@ -41,6 +41,10 @@ function inputIntegerFromUser(promptMessage) {
       }
     });
   });
+}
+// If strength ,  health & attack is negative return
+function isNegativeInteger(num) {
+  return Number.isInteger(num) && num < 0;
 }
 
 module.exports = { rollDice, inputStringFromUser, inputIntegerFromUser };
