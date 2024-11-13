@@ -33,7 +33,7 @@ function inputIntegerFromUser(promptMessage) {
     rl.question(promptMessage, (inputString) => {
       rl.close();
       const userInput = parseInt(inputString.trim(), 10);
-      if (!isNaN(userInput) && !isNagative(userInput)) {
+      if (!isNaN(userInput) && !isNegativeInteger(userInput)) {
         resolve(userInput);
       } else {
         console.log("Invalid input. Please enter a valid integer!!");
