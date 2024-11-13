@@ -2,7 +2,7 @@ const { rollDice } = require("../utils/GameFunction");
 
 describe("rollDice function", () => {
   
-  // dice roll output should be in range of 1 -> 6
+  // dice output should be in range of 1 - 6
   test("returns a number between 1 and 6", () => {
     const result = rollDice();
     expect(result).toBeGreaterThanOrEqual(1);
