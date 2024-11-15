@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "Priyanshu Gaur",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "jest": "^29.7.0"
   }
 }
